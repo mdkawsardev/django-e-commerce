@@ -10,3 +10,6 @@ class ProductAdmin(admin.ModelAdmin):
 @admin.register(ProductImage)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['product', 'image']
+@admin.register(Profile)
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ['user', 'varified_email']
